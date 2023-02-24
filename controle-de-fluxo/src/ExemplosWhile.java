@@ -9,14 +9,14 @@ public class ExemplosWhile {
             if (valorDoce > mesada) {
                 valorDoce = mesada;
             }
-            System.out.println("Valor do doce: " + valorDoce + " adicionado no carrinho");
+            System.out.printf("Valor do doce: %.2f adicionado no carrinho\n", valorDoce);
             mesada = mesada - valorDoce;
-            System.out.println("Mesada: " + mesada);
+            System.out.printf("Mesada: %.2f\n" ,mesada);
         }
         System.out.println("Joãozinho gastou toda a sua mesada em doces");
     }
 
     private static double valorAleatorio() {
-        return ThreadLocalRandom.current().nextDouble(2, 15);
+        return ThreadLocalRandom.current().nextDouble(2, 10);
     }
 }
