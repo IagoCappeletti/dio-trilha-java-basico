@@ -5,7 +5,14 @@ import java.util.Scanner;
 public class AboutME {
     public static void main(String[] args) {
 
-        try{
+        try{ 
+            /*
+                Try permite que definimos um bloco de código para ser testado 
+                quanto a erros enquanto está sendo executado.
+
+                Catch permite definir um bloco de código a ser executado, caso
+                ocorra um erro(fluxo não previsto) no bloco try.
+             */
             Locale.setDefault(Locale.US);
             Scanner sc = new Scanner(System.in);
 
